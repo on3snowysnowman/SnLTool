@@ -1,0 +1,142 @@
+[
+    {
+        "description": "Restores 2 + 1d4 hitpoints",
+        "ingredients": "Healing Herb",
+        "name": "Healing"
+    },
+    {
+        "description": "Restores 10 + 1d6 Hitpoints",
+        "ingredients": "Powdered Unicorn Horn or Scilla Flower",
+        "name": "Enhanced Healing "
+    },
+    {
+        "description": "Restores 4 + 3d6 Mana",
+        "ingredients": "Nightshade",
+        "name": "Mana Restoration"
+    },
+    {
+        "description": "Provides +2 bonus to Strength 1 hour. For each additional potion consumed, extend the duration by 1 hour.",
+        "ingredients": "Vial of Minotaur Blood",
+        "name": "Strength"
+    },
+    {
+        "description": "Provides +1 bonus to Arcanary Level for 1 hour, but deducts 1 from every other skill. Can be stacked.",
+        "ingredients": "Decker Crystal",
+        "name": "Arcane Enhancment "
+    },
+    {
+        "description": "Renders the user invisible for 1 hour. For each additional potion consumed, extend the duration by 1 hour.",
+        "ingredients": "Ghost Orchid ",
+        "name": "Invisibility"
+    },
+    {
+        "description": "Provides +2 bonus to Athletics for 10 minutes. For each additional potion consumed, extend duration by 10 minutes. ",
+        "ingredients": "Swiftfoot Shroom x2",
+        "name": "Haste "
+    },
+    {
+        "description": "Provides +4 bonus to Athletics for 10 minutes. For each additional potion consumed, increase duration by 10 minutes.",
+        "ingredients": "Cheetah Adreline Gland ",
+        "name": "Enhanced Haste"
+    },
+    {
+        "description": "Provides +2 bonus against Fire and Lava saving throws for 1 hour. For each additional potion consumed,extend the duration by 1 hour.",
+        "ingredients": "Obsidian Crystal ",
+        "name": "Fire Resistance"
+    },
+    {
+        "description": "Provides +2 bonus against Frost saving throws for 1 hour. For each additional potion consumed, extend the duration by 1 hour. ",
+        "ingredients": "Heart of a Frost Golem",
+        "name": "Frost Resistance"
+    },
+    {
+        "description": "Provides +2 bonus to Perception for 1 hour. For each additional potion consumed, increase the duration by 1 hour.",
+        "ingredients": "Owl Feather x3",
+        "name": "Awareness"
+    },
+    {
+        "description": "Regain 1d4 Hitpoints every minute for the next 10 minutes. Can be stacked 3 times.",
+        "ingredients": "Healing Herb",
+        "name": "Regeneration "
+    },
+    {
+        "description": "Provides +2 bonus to Endurance for 1 hour. For each additional potion consumed, extend the duration by 1 hour",
+        "ingredients": "Powdered Bone of a Giant",
+        "name": "Fortitude"
+    },
+    {
+        "description": "Converts the user's skin into a tough hide covered in Dragon Scales, giving them a Defense level of 18 for 1 hour. For each additional potion consumed, extend the duration by 1 hour",
+        "ingredients": "Dragon Scale x5 and a Dragon Horn",
+        "name": "Dragon Skin"
+    },
+    {
+        "description": "Converts the user's skin into a tough hide, giving them a Defense level 14 for 1 hour. For each additional potion consumed, increase duration by 1 hour.",
+        "ingredients": "Portion of Pig Hide and a Pig's tail",
+        "name": "Pig Skin"
+    },
+    {
+        "description": "Provides +2 bonus to Stealth for 1 hour. For each additional potion consumed, extend the duration for 1 hour.",
+        "ingredients": "Bat Wing",
+        "name": "Stealth"
+    },
+    {
+        "description": "Provides +4 bonus to Stealth for 1 hour. For each additional potion consumed, extend the duration by 1 hour.",
+        "ingredients": "Skin of a Chameleon & Smalt Dust",
+        "name": "Enhanced Stealth "
+    },
+    {
+        "description": "Provides +3 bonus to all skills for 1 hour. For each additional potion consumed, extend the duration by 1 hour.",
+        "ingredients": "Dragon Heart",
+        "name": "Dragon Elixir"
+    },
+    {
+        "description": "Provides Dark Vision for 1 hour. For each additional potion consumed, extend the duration by 1 hour.",
+        "ingredients": "Lunar Bud",
+        "name": "Dark Vision"
+    },
+    {
+        "description": "Allows the user to breathe under water for 1 hour. For each additional potion consumed potion, extend the duration by 1 hour.",
+        "ingredients": "Seaweed x2 and a fish's head",
+        "name": "Gils"
+    },
+    {
+        "description": "The user must drink half this potion, and whomever drinks the other half will act as allies with the user, and can't be convinced otherwise for 1 hour. For each additional potion consumed, extend the duration by 1 hour.",
+        "ingredients": "Pixie Dust and a Lotus Flower",
+        "name": "Charming"
+    },
+    {
+        "description": "Cures poison",
+        "ingredients": "Purification Crystal",
+        "name": "Antidote "
+    },
+    {
+        "description": "For the next 10 minutes, any roll that the user makes may be allowed to roll again and pick either value. For each additional potion consumed, extend the duration by 10 minutes",
+        "ingredients": "Rabbits foot x3 and a Four Leaved Clover",
+        "name": "Luck"
+    },
+    {
+        "description": "For the next minute, time is slowed for the user. Provides a +2 to Athletics, and grants advantage for Athletics saving throws",
+        "ingredients": "Warping Bud",
+        "name": "Elixir of Time"
+    },
+    {
+        "description": "Allows the user to understand and speak any language for 1 hour. For each additional potion consumed, extend the duration by 1 hour",
+        "ingredients": "Parrot Feather x5 and a Parrot Eye",
+        "name": "Tongue Twister"
+    },
+    {
+        "description": "The user must drink half this potion, and whomever drinks the other half will create a \"link\" between them and the user, sharing senses and thoughts for 1 hour. This link may be dropped by either party at any time. For each additional potion consumed, increase the duration by 1 hour.",
+        "ingredients": "Psychoid Mushroom x2",
+        "name": "Shared Senses"
+    },
+    {
+        "description": "After the user drinks this potion, they fall into a deep slumber for 1 hour. During this sleep, the user gains glimpses at the potential future and dangers that lie ahead. The user can only be awoken by taking damage. Consuming additional potions has no effect on the future prediction, and only extends the slumber by 1 hour.",
+        "ingredients": "Warping Bud and a vial of Slumber Root Extract",
+        "name": "Dreamwalking Clairvoyance"
+    },
+    {
+        "description": "The creature that drinks this potion is forced to answer truthfully to any question asked for the next 10 minutes. For each additional potion consumed, extend the duration by 10 minutes.",
+        "ingredients": "Beholder Eye",
+        "name": "Truth Serum"
+    }
+]
