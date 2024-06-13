@@ -11,11 +11,11 @@
 
 struct Character
 {
-    int hitpoints {};
-    int max_hitpoints {};
+    uint16 hitpoints {};
+    uint16 max_hitpoints {};
 
-    int mana {};
-    int max_mana {};
+    uint16 mana {};
+    uint16 max_mana {};
 
     std::string name;
     std::string race;

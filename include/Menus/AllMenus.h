@@ -15,3 +15,4 @@
 #include "EditStatsMenu.h"
 #include "ViewInventoryMenu.h"
 #include "AddInventoryItemMenu.h"
+#include "EditInventoryItemMenu.h"

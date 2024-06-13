@@ -87,7 +87,7 @@ void EditStatsMenu::start()
 
 void EditStatsMenu::update() 
 {
-    window->add_str("[...][...][ Simulation Menu / View Stats / Edit Character ]"
+    window->add_str("[...][...][ Simulation Menu / Edit Character ]"
         "\n\n");
 
     (this->*target_update_function)();
@@ -304,17 +304,20 @@ void EditStatsMenu::handle_randomize_skills()
     input_handler->block_key_until_released(SDLK_RETURN);
 }
 
+#include <iostream>
+
 void EditStatsMenu::handle_save()
 {
     (*focused_character)->name = name->content;
     
     (*focused_character)->max_hitpoints = 
-        LSDLELIB::string_to_int32(max_hitpoints->content);
+        LSDLELIB::string_to_uint16(max_hitpoints->content);
+
     (*focused_character)->hitpoints = LSDLELIB::round_num_to_maximum(
         (*focused_character)->hitpoints, (*focused_character)->max_hitpoints);
 
     (*focused_character)->max_mana = 
-        LSDLELIB::string_to_int32(max_mana->content);
+        LSDLELIB::string_to_uint16(max_mana->content);
     (*focused_character)->mana = LSDLELIB::round_num_to_maximum(
         (*focused_character)->mana, (*focused_character)->max_mana);
 

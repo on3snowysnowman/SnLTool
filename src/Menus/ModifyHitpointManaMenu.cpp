@@ -73,8 +73,8 @@ void ModifyHitpointManaMenu::render_character_stats()
 
 void ModifyHitpointManaMenu::handle_increase() 
 {
-    int* modification_target {};
-    int* modification_target_max {};
+    uint16* modification_target {};
+    uint16* modification_target_max {};
 
     if(modification_choice->get_choice() == "Hitpoints")
     {
@@ -101,8 +101,8 @@ void ModifyHitpointManaMenu::handle_increase()
 
 void ModifyHitpointManaMenu::handle_decrease() 
 {
-    int* modification_target {};
-    int* modification_target_max {};
+    uint16* modification_target {};
+    uint16* modification_target_max {};
 
     if(modification_choice->get_choice() == "Hitpoints")
     {

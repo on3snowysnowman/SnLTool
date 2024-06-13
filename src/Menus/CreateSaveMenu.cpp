@@ -42,13 +42,11 @@ void CreateSaveMenu::update()
 
 void CreateSaveMenu::main_update_function() 
 {
-    window->add_str("[ Main Menu / Create Save ]\n\n"
-        "-- Make a Selection --\n\n");
+    window->add_str("[ Main Menu / Create Save ]\n\n");
 
     menu_tools->simulate_menu(msdc);
 }
 
-#include <iostream>
 void CreateSaveMenu::creation_failed_update_function() 
 {
     window->add_str("\nThis save file name already exists. Pick a different "
@@ -63,6 +61,8 @@ void CreateSaveMenu::creation_failed_update_function()
 
 void CreateSaveMenu::handle_save_creation() 
 {
+    if(save_name->content.size() == 0) return;
+
     // Target path already exist for the name of this save
     if(!save_handler->create_new_save_file_on_disk(save_name->content))
     { 

@@ -23,6 +23,7 @@ add_library(SnLTool
     src/Menus/CreateCharacterMenu.cpp
     src/Menus/CreateSaveMenu.cpp
     src/Menus/DeleteSaveMenu.cpp
+    src/Menus/EditInventoryItemMenu.cpp
     src/Menus/EditStatsMenu.cpp
     src/Menus/IntroMenu.cpp
     src/Menus/MainMenu.cpp

@@ -1,4 +1,4 @@
-Write an inventory handler
+Write EditInventoryItemMenu
 
 Implement a settings menu with a cursor color option
 

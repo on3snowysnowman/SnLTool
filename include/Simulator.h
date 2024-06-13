@@ -20,11 +20,15 @@ public:
 
 private:
 
+    // Members
+
     std::vector<Character*> all_characters;
 
     Character* focused_character {}; 
 
     SaveHandler* save_handler {};
+
+    // Methods
 
     void create_menus();
 

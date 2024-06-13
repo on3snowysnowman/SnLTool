@@ -168,24 +168,28 @@ Character* SaveHandler::create_character_from_json(Json character_json)
     // Load Inventory
     temp = character_json["inventory"];
 
+    // Transfer Json for the Item
+    Item* item;
+
     // Transfer Json for the attributes of each item
     Json item_attributes;
-
-    Item* item;
 
     // Iterate through the saved items
     for(const Json& item_json : temp)
     {   
         item = new Item;
 
-        item->name = item["name"];
+        item->name = item_json["name"];
 
         // Get the attributes of this item
-        item_attributes = item["attributes"];
+        item_attributes = item_json["attributes"];
     
         for(const std::string& attrib : item_attributes)
         {   
+            item->attributes.push_back(attrib);
         }
+
+        c->inventory.push_back(item);
     }
 
     return c;
@@ -234,6 +238,29 @@ Json SaveHandler::create_json_from_character(Character* c)
     }
 
     character_save["effects"] = temp;
+    temp.clear();
+
+    // Save Inventory
+    
+    Json json_item;
+
+    Json attributes;
+
+    for(Item* item : c->inventory)
+    {
+        attributes.clear();
+
+        json_item["name"] = item->name;
+
+        for(const std::string& attrib : item->attributes)
+        {
+            attributes.push_back(attrib);
+        }
+
+        json_item["attributes"] = attributes;
+
+        character_save["inventory"].push_back(json_item);
+    }
 
     return character_save;
 }

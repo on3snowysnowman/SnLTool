@@ -184,21 +184,4 @@ void SimulationMenu::render_second_page_stats()
         target_stat_render_function = &SimulationMenu::render_first_page_stats;
         input_handler->set_delay(SDLK_LEFT);
     }
-
-    // else if(input_handler->is_key_pressed_and_available(SDLK_RIGHT))
-    // {
-    //     target_stat_render_function = &SimulationMenu::render_inventory_page;
-    //     input_handler->set_delay(SDLK_RIGHT);
-    // }
 }
-
-// void SimulationMenu::render_inventory_page() 
-// {
-//     first_stats_window->add_str("[Page 3 / 3]\n\n -- Inventory --\n\n");
-
-//     if(input_handler->is_key_pressed_and_available(SDLK_LEFT))
-//     {
-//         target_stat_render_function = &SimulationMenu::render_second_page_stats;
-//         input_handler->set_delay(SDLK_LEFT);
-//     }
-// }
