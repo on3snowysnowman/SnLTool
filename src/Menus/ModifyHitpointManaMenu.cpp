@@ -61,11 +61,12 @@ void ModifyHitpointManaMenu::render_character_stats()
     window->set_cursor_position(40, 2);
     window->set_anchor(40);
 
+    window->add_str("Name: ", "LightGray");
     window->add_str((*focused_character)->name + '\n');
-    window->add_str("Hitpoints: ");
+    window->add_str("Hitpoints: ", "LightGray");
     menu_tools->render_multi_colored_meter((*focused_character)->hitpoints, 
         0, (*focused_character)->max_hitpoints);
-    window->add_str("\nMana: ");
+    window->add_str("\nMana: ", "LightGray");
     menu_tools->render_single_color_meter((*focused_character)->mana, 0, 
         (*focused_character)->max_mana, "Blue");
 }

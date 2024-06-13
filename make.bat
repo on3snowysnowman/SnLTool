@@ -24,7 +24,7 @@ set DPI_SCALING_MODE=2
 set REG_PATH=HKCU\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers
 
 :: Create a Registry entry to override High DPI scaling
-reg add "%REG_PATH%" /v "C:\Users\on3sn\Desktop\Programming\SnLTool\main.exe" /t REG_SZ /d "~ HIGHDPIAWARE %DPI_SCALING_MODE%" /f
+reg add "%REG_PATH%" /v "C:\Users\Joel\Desktop\Programming\SnLTool\main.exe" /t REG_SZ /d "~ HIGHDPIAWARE %DPI_SCALING_MODE%" /f
 
 :: Notify the user that the operation is complete
 echo DPI scaling settings for %APP_NAME% have been updated.

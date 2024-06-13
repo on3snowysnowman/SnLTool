@@ -5,7 +5,7 @@
 
 // Constructors / Deconstructor 
 
-Simulator::Simulator() : LSDLE("C:/Users/on3sn/LSDLE")
+Simulator::Simulator() : LSDLE("C:/Users/Joel/LSDLE")
 {
     CallbackManager::subscribe<Simulator>("quit", this, stop_engine);
     CallbackManager::subscribe<Simulator>("save_characters", this, 
@@ -53,8 +53,9 @@ void Simulator::create_menus()
     DeleteSaveMenu* del_save_m = new DeleteSaveMenu(save_handler);
     AddSpellMenu* add_spell_m = new AddSpellMenu();
     AddPotionMenu* add_pot_m = new AddPotionMenu();
-    ViewStatsMenu* view_stats_m = new ViewStatsMenu(&focused_character);
     EditStatsMenu* edit_stats_m = new EditStatsMenu(&focused_character);
+    ViewInventoryMenu* view_inv_m = new ViewInventoryMenu(&focused_character);
+    AddInventoryItemMenu* add_inv_item_m = new AddInventoryItemMenu(&focused_character);
 
     MenuHandler::activate_menu(intro_m);
 }

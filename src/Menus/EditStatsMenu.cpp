@@ -87,7 +87,7 @@ void EditStatsMenu::start()
 
 void EditStatsMenu::update() 
 {
-    window->add_str("[...][...][ Simulation Menu / View Stats / Edit Stats ]"
+    window->add_str("[...][...][ Simulation Menu / View Stats / Edit Character ]"
         "\n\n");
 
     (this->*target_update_function)();
@@ -110,7 +110,7 @@ void EditStatsMenu::handle_stats_page()
         msdc.reset();
         msdc.cursor_pos = skills_last_position;
 
-        input_handler->block_key_until_released(SDLK_RIGHT);
+        input_handler->set_delay(SDLK_RIGHT);
         target_update_function = &handle_skills_page;
 
         msdc.content.clear();
@@ -135,7 +135,7 @@ void EditStatsMenu::handle_skills_page()
         skills_last_position = msdc.cursor_pos;
         msdc.reset();
 
-        input_handler->block_key_until_released(SDLK_RIGHT);
+        input_handler->set_delay(SDLK_RIGHT);
         target_update_function = &handle_attributes_page;
 
         msdc.content.clear();
@@ -148,7 +148,7 @@ void EditStatsMenu::handle_skills_page()
         msdc.reset();
         msdc.cursor_pos = stats_last_position;
 
-        input_handler->block_key_until_released(SDLK_LEFT);
+        input_handler->set_delay(SDLK_LEFT);
         target_update_function = &handle_stats_page;
 
         msdc.content.clear();
@@ -170,7 +170,7 @@ void EditStatsMenu::handle_attributes_page()
     {
         msdc.reset();
 
-        input_handler->block_key_until_released(SDLK_RIGHT);
+        input_handler->set_delay(SDLK_RIGHT);
         target_update_function = &handle_effects_page;
 
         msdc.content.clear();
@@ -182,7 +182,7 @@ void EditStatsMenu::handle_attributes_page()
         msdc.reset();
         msdc.cursor_pos = skills_last_position;
 
-        input_handler->block_key_until_released(SDLK_LEFT);
+        input_handler->set_delay(SDLK_LEFT);
         target_update_function = &handle_skills_page;
 
         msdc.content.clear();
@@ -206,7 +206,7 @@ void EditStatsMenu::handle_effects_page()
     {
         msdc.reset();
 
-        input_handler->block_key_until_released(SDLK_LEFT);
+        input_handler->set_delay(SDLK_LEFT);
         target_update_function = &handle_attributes_page;
 
         msdc.content.clear();

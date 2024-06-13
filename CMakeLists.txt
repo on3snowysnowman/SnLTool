@@ -1,9 +1,11 @@
-project(SnLTool)
-
 cmake_minimum_required(VERSION 3.24)
 
+project(SnLTool)
+
+set(LSDLE_PATH "C:/Users/Joel/LSDLE")
+
 # Find the LSDLE library
-find_library(LSDLE_LIB NAMES LSDLE PATHS "C:/Users/on3sn/LSDLE/lib")
+find_library(LSDLE_LIB NAMES LSDLE PATHS "${LSDLE_PATH}/lib")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
 
@@ -14,6 +16,7 @@ add_library(SnLTool
     src/SaveHandler.cpp
     src/Simulator.cpp
     
+    src/Menus/AddInventoryItemMenu.cpp
     src/Menus/AddPotionMenu.cpp
     src/Menus/AddSpellMenu.cpp
     src/Menus/CharacterSaveTypeSelectionMenu.cpp
@@ -27,16 +30,16 @@ add_library(SnLTool
     src/Menus/SaveLoadMenu.cpp
     src/Menus/SelectCharacterMenu.cpp
     src/Menus/SimulationMenu.cpp
-    src/Menus/ViewStatsMenu.cpp
+    src/Menus/ViewInventoryMenu.cpp
 )
  
 target_include_directories(SnLTool
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/Menus>
-        $<BUILD_INTERFACE:C:/Users/on3sn/LSDLE/include/LSDLE>
-        $<BUILD_INTERFACE:C:/Users/on3sn/LSDLE/include/LSDLE/MenuTools>
-        $<BUILD_INTERFACE:C:/Users/on3sn/LSDLE/include/LSDLE/ModularComponents>
+        $<BUILD_INTERFACE:${LSDLE_PATH}/include/LSDLE>
+        $<BUILD_INTERFACE:${LSDLE_PATH}/include/LSDLE/MenuTools>
+        $<BUILD_INTERFACE:${LSDLE_PATH}/include/LSDLE/ModularComponents>
     PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/src
 )

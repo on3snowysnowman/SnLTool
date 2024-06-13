@@ -12,5 +12,6 @@
 #include "DeleteSaveMenu.h"
 #include "AddSpellMenu.h"
 #include "AddPotionMenu.h"
-#include "ViewStatsMenu.h"
 #include "EditStatsMenu.h"
+#include "ViewInventoryMenu.h"
+#include "AddInventoryItemMenu.h"

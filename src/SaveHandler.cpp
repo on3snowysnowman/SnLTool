@@ -8,7 +8,7 @@
 // Static Members
 
 const std::string SaveHandler::SAVES_DIRECTORY 
-    = "C:/users/on3sn/documents/SnLTool_Saves";
+    = "C:/users/Joel/documents/SnLTool_Saves";
 
 
 // Constructors / Deconstructor
@@ -163,6 +163,29 @@ Character* SaveHandler::create_character_from_json(Json character_json)
     for(const std::string& _str : temp)
     {
         c->effects.push_back(_str);
+    }
+
+    // Load Inventory
+    temp = character_json["inventory"];
+
+    // Transfer Json for the attributes of each item
+    Json item_attributes;
+
+    Item* item;
+
+    // Iterate through the saved items
+    for(const Json& item_json : temp)
+    {   
+        item = new Item;
+
+        item->name = item["name"];
+
+        // Get the attributes of this item
+        item_attributes = item["attributes"];
+    
+        for(const std::string& attrib : item_attributes)
+        {   
+        }
     }
 
     return c;

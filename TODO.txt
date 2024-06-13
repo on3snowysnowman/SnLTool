@@ -1,0 +1,5 @@
+Write an inventory handler
+
+Implement a settings menu with a cursor color option
+
+Documentation...
